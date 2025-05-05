@@ -188,6 +188,7 @@ def handle_data_selection(message, bot):
 
 
 def handle_excel_download(message, bot):
+    global excel_file
     try:
         excel_file = generate_excel(historical_data=metal_data[current_metal].historical_data,
                                     filename=f"{current_metal}_output.xlsx")
