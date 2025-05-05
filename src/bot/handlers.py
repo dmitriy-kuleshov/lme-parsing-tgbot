@@ -1,5 +1,5 @@
 from datetime import datetime
-from keyboards import create_main_menu, create_data_format_menu, create_data_menu
+from src.bot.keyboards import create_main_menu, create_data_format_menu, create_data_menu
 from src.lme_parser.generate_file import generate_excel
 from src.lme_parser.full_parser import AluminiumHistoricData, CopperHistoricData, NickelHistoricData, ZincHistoricData, \
     TinHistoricData, LeadHistoricData
