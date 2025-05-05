@@ -10,9 +10,11 @@ bot = telebot.TeleBot(TOKEN)
 def start(message):
     handle_start(message, bot)
 
+
 @bot.message_handler(content_types=['text'])
 def text(message):
     handle_text(message, bot)
+
 
 if __name__ == '__main__':
     print("Bot is polling...")
