@@ -17,5 +17,7 @@ def text(message):
 
 
 if __name__ == '__main__':
+    print("Removing webhook (if any)...")
+    bot.remove_webhook()
     print("Bot is polling...")
     bot.polling(none_stop=True)
