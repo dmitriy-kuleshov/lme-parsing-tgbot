@@ -137,15 +137,6 @@ def handle_text(message, bot):
     elif message.text == "Скачать файл Excel":
         handle_excel_download(message, bot)
 
-    # elif message.text == "Назад":
-    #     current_data_type = None
-    #     current_metal = None
-    #     if message.chat.id in user_state:
-    #         user_state.clear()
-    #         logger.info(f"State cleared for user {message.chat.id} on 'Назад'")
-    #     markup = create_main_menu()
-    #     bot.send_message(message.chat.id, text="Вы вернулись в главное меню", reply_markup=markup)
-
     else:
         bot.send_message(message.chat.id, text="На такую команду я не запрограммирован. Нажмите /start чтобы начать заново")
 
